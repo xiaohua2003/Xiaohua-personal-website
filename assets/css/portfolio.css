@@ -1,0 +1,44 @@
+/*==================== SERVICES ====================*/
+/*imge*/
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.services__container {
+  grid-template-columns: repeat(autofit, 350px);
+  overflow: auto;
+}
+
+.services__content {
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.services__content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.services__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+}
+
+.services__button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.services__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+.column_2 {
+  margin-top: 2%;
+}
