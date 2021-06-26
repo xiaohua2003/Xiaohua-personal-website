@@ -10,11 +10,13 @@
 
     <!--==================== SWIPER CSS====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <!--==================== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Responsive Portfolio Website</title>
+    <title>Xiaohua Personal Website</title>
 </head>
 
 <body>
@@ -55,6 +57,7 @@
                         </a>
                     </li>
                 </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
             <div class="nav__btns">
@@ -62,7 +65,7 @@
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
+                    <i class="bx bx-menu"></i>
                 </div>
             </div>
         </nav>
@@ -100,26 +103,41 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                                 
-                                <!--==================== 
-                                        Insert your image in the Img folder and Change your image |
-                                        Center your image with X: horizontal, Y: vertical 
-                                    ====================--> 
                                 <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/xiao.png" />
                             </g>
                         </svg>
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Xiaohua</h1>
+                        <h1 class="home__title">Hi, <br> I'am<span class="home__title-color"> Xiaohua</span></h1>
                         <h3 class="home__subtitle">Full Stack developer</h3>
                         <p class="home__description">High level experience in web design and development
                             knowledge, producing quality work.</p>
-                        <a href="#contact" class="button button--flex first-btn">
-                            Contact</i>
-                        </a>
+                        <div class="about__info">
+                            <div>
+                                <a href="https://github.com/xiaohua2003" class="about__info-title">Github</a>
+                                
+                            </div>
+    
+                            <div>
+                                <a href="https://www.linkedin.com/in/xiaohua-cai/" class="about__info-title">Linkedin</a>
+                            </div>
+    
+                            <div>
+                                <a href="" class="about__info-title">Portfolio</a>
+                                
+                            </div>
+                        </div>
+                        <div class="about__buttons">
+                            <!--==================== Change your CV ====================-->
+                            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                        
+
                     </div>
                 </div>
-
 
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
@@ -143,28 +161,10 @@
                     <p class="about__description">Full Stack Developer, with extensive knowledge and 
                         experience, working in frontend and backend technologies, delivering quality work.
                     </p>
-
-                    <div class="about__info">
-                        <div>
-                            <a href="https://github.com/xiaohua2003" class="about__info-title">Github</a>
-                           
-                        </div>
-
-                        <div>
-                            <a href="https://www.linkedin.com/in/xiaohua-cai/" class="about__info-title">Linkedin</a>
-                        </div>
-
-                        <div>
-                            <a href="" class="about__info-title">Portfolio</a>
-                          
-                        </div>
-                    </div>
-
                     <div class="about__buttons">
-                        <!--==================== Change your CV ====================-->
-                        <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-                            Download CV <i class="uil uil-download-alt button__icon"></i>
-                        </a>
+                    <a href="#contact" class="button button--flex first-btn">
+                        Contact</i>
+                    </a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
   --header-height: 3rem;
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 250;
+  --hue-color: 225;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -26,7 +26,7 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
-  --normal-font-size: 0.938rem;
+  --normal-font-size: 1rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   /*========== Font weight ==========*/
@@ -54,7 +54,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
+    --small-font-size: 0.9rem;
     --smaller-font-size: 0.813rem;
   }
 }
@@ -62,6 +62,7 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   /* HSL color mode */
+  --hue-color: 190;
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -163,21 +164,24 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
 /*==================== NAV ====================*/
 .nav {
-  max-width: 968px;
+  max-width: 1100px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2.2% 0;
 }
 
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+  font-size: 1.6rem;
 }
 
 .nav__logo:hover {
@@ -216,7 +220,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -258,6 +262,7 @@ img {
 }
 
 /*==================== HOME ====================*/
+
 .home__container {
   gap: 1rem;
 }
@@ -299,7 +304,9 @@ img {
 .home__title {
   font-size: var(--big-font-size);
 }
-
+.home__title-color {
+  color: #4070f4;
+}
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--text-color);
@@ -409,14 +416,14 @@ img {
 }
 
 .about__info-title {
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
-  color: #de8971;
-}
-
-.about__info-title {
+  color: #9c2ee6;
   display: block;
   text-align: center;
+}
+.about__info-title:hover {
+  color: #ca2ee6;
 }
 
 .about__buttons {
@@ -908,7 +915,7 @@ img {
 }
 
 .footer__bg {
-  background-color: var(--first-color-second);
+  background-color: #0e2431;
   padding: 2rem 0 3rem;
 }
 
