@@ -67,7 +67,7 @@
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   /* HSL color mode */
-  --hue-color: 190;
+  --hue-color: 230;
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
@@ -423,7 +423,7 @@ img {
 .about__info-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
-  color: #9c2ee6;
+  color: var(--first-color-alt);
   display: block;
   text-align: center;
 }
