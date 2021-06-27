@@ -134,6 +134,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+.imgBox:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
