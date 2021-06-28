@@ -492,6 +492,10 @@ img {
   text-align: center;
   margin-top: 5%;
 }
+.submit-button {
+  outline: none;
+  border: 0;
+}
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
